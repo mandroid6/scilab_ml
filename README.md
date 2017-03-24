@@ -21,6 +21,9 @@ Other machine learning features to be included:
 -Gradient Descent (seperate.sci for function calls)
 -Backpropogation algorithm
 
+Addition of known ml libraries in python to scilab-
+1. Scikit-learn
+2. tensorflow
 
 If project continued over the summer, then I will do addition of deep learning algorithms through SCLILAB:
 1. Convolutional neural networks
