@@ -6,6 +6,7 @@ Models added till now:
 2. Logistic regression  
 
 To be added:
+
 3. Neural networks
 4. K-means Clustering algorithm
 5. Support Vector Machine algorithm
