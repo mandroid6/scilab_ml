@@ -1,7 +1,7 @@
-t=csvRead("data_classification.csv");
+t=csvRead("random.csv");
 
 
-b0 = 10;
+b0 = 5;
 t = b0 * rand(100,2);
 t = [t 0.5+0.5*sign(t(:,2)+t(:,1)-b0)];
 
@@ -10,12 +10,12 @@ flip = find(abs(t(:,2)+t(:,1)-b0)<b);
 t(flip,$)=grand(length(t(flip,$)),1,"uin",0,1);
 
 
-t0 = t(find(t(:,$)==0),:);
-t1 = t(find(t(:,$)==1),:);
+c0 = t(find(t(:,$)==0),:);
+c1 = t(find(t(:,$)==1),:);
 
 clf(0);scf(0);
-plot(t0(:,1),t0(:,2),'bo')
-plot(t1(:,1),t1(:,2),'rx')
+plot(c0(:,1),c0(:,2),'bo')
+plot(c1(:,1),c1(:,2),'rx')
 
 
 
@@ -53,6 +53,11 @@ disp(theta)
 u = linspace(min(x(:,2)),max(x(:,2)));
 
 clf(1);scf(1);
-plot(t0(:,1),t0(:,2),'bo')
-plot(t1(:,1),t1(:,2),'rx')
+plot(c0(:,1),c0(:,2),'bo')
+plot(c1(:,1),c1(:,2),'rx')
 plot(u,-(theta(1)+theta(2)*u)/theta(3),'-g')
+
+//cost function plot to check convergence
+clf(2);scf(2);
+plot(1:n_iter, J');
+xtitle('Convergence','Iterations','Cost')
