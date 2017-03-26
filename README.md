@@ -20,6 +20,7 @@ To be added:
 Other machine learning features to be included:
 -Gradient Descent (seperate.sci for function calls)
 -Backpropogation algorithm
+-Dimensionality reduction (PCA, kernel PCA)
 
 Addition of known ml libraries in python to scilab-
 1. Scikit-learn
