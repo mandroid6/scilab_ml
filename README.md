@@ -16,11 +16,13 @@ To be added:
 9. Nearest Neighbours
 10. Random Forests
 11. Decision Trees
-    .
+
+.
 Other machine learning features to be included:
--Gradient Descent (seperate.sci for function calls)
--Backpropogation algorithm
--Dimensionality reduction (PCA, kernel PCA)
+1. Gradient Descent (seperate.sci for function calls)
+2. Backpropogation algorithm
+3. Dimensionality reduction (PCA, kernel PCA)
+
 
 Addition of known ml libraries in python to scilab-
 1. Scikit-learn
